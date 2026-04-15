@@ -1,4 +1,4 @@
 # Lab 2 - Starter
 
 ## Mikey's User Page
-[View my site](https://migingyn.github.io)
+[View my site](https://migingyn.github.io/Lab2_Starter/)
