@@ -262,3 +262,28 @@ nav {
 form {
   padding: 12px 20px;
 }
+
+/*
+   Display values (none, block, inline-block, inline)
+*/
+
+/* none - hide favicon-style extras that aren't needed on the page */
+datalist {
+  display: none; /* datalist options never render anyway, but explicit here */
+}
+
+/* block - radio labels each take their own line */
+label {
+  display: block;
+}
+
+/* inline-block - nav links sit in a row but accept width/padding */
+nav a {
+  display: inline-block;
+  width: 140px;
+}
+
+/* inline - spans flow with surrounding text */
+span {
+  display: inline;
+}
