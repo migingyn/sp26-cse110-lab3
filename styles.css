@@ -301,3 +301,17 @@ nav {
   flex-wrap: wrap;
   gap: 12px;
 }
+
+/*
+   CSS Grid Layout
+*/
+
+/* Two-column grid for attendance list */
+#attendance ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 8px 16px; /* row-gap | column-gap */
+  list-style: none;
+  padding: 0;
+}
