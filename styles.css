@@ -179,3 +179,35 @@ button {
 fieldset {
   border-color: hsla(220, 80%, 50%, 0.5); /* translucent blue border */
 }
+
+/*
+   Text Styling (color, text-decoration, text-align)
+*/
+
+/* color on text */
+h3 {
+  color: #8b0000; /* dark red for subheadings */
+}
+
+/* text-decoration - underline on strong, strike-through on em */
+strong {
+  text-decoration: underline;
+}
+
+em {
+  text-decoration: line-through;
+}
+
+/* Remove default underline on nav links */
+nav a {
+  text-decoration: none;
+}
+
+/* text-align - center headings, justify paragraphs */
+h2 {
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+}
