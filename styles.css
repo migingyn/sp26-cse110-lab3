@@ -407,3 +407,27 @@ button:active {
   background-color: hsl(140, 60%, 20%);
   transform: translateY(1px);
 }
+
+/*
+   Combinators (descendant, child, adjacent sibling, general sibling)
+*/
+
+/* Descendant (space) - any <li> nested anywhere inside a <section> */
+section li {
+  line-height: 1.8;
+}
+
+/* Child (>) - only direct <p> children of <header> */
+header > p {
+  margin: 4px 0;
+}
+
+/* Adjacent sibling (+) - the first <ul> that comes right after an <h3> */
+h3 + ul {
+  margin-top: 0;
+}
+
+/* General sibling (~) - all <p> elements after an <h2> at the same level */
+h2 ~ p {
+  color: #444;
+}
