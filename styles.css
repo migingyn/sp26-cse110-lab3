@@ -375,3 +375,35 @@ input[type="text"] {
 a[href^="#"] {
   font-weight: bold;
 }
+
+/*
+   Pseudo-classes (:hover, :active)
+*/
+
+/* Smooth transition applied to interactive elements */
+nav a,
+button {
+  transition: background-color 0.2s, color 0.2s, transform 0.1s;
+}
+
+/* Hover - highlight nav links when the mouse is over them */
+nav a:hover {
+  background-color: var(--primary-color, #3a86ff);
+  color: white;
+}
+
+/* Active - press-down effect while the link is being clicked */
+nav a:active {
+  transform: scale(0.95);
+}
+
+/* Button hover - darken and lift slightly */
+button:hover {
+  background-color: hsl(140, 60%, 30%);
+}
+
+/* Button active - invert colors briefly while pressed */
+button:active {
+  background-color: hsl(140, 60%, 20%);
+  transform: translateY(1px);
+}
