@@ -3,6 +3,10 @@
    Global defaults applied to the whole document.
 */
 
+:root {
+  --primary-color: #3a86ff; /* main accent color used across the page */
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5; /* improves readability for long paragraphs */
@@ -50,4 +54,128 @@ img {
   display: block;
   width: 400px;
   margin: 0 auto;
+}
+
+/*
+   Absolute Units (px, pt, cm, mm)
+*/
+
+/* px for border thickness */
+hr {
+  border-top: 2px solid #ccc;
+}
+
+/* pt for typography (common in print styles) */
+footer {
+  font-size: 10pt;
+}
+
+/* cm for a fixed physical size */
+summary {
+  padding: 0.5cm;
+}
+
+/* mm for fine-grained absolute spacing */
+legend {
+  margin-bottom: 3mm;
+}
+
+/*
+   Dimensions (height, width, max-width, min-width)
+*/
+
+/* Fixed header height */
+header {
+  height: 120px;
+}
+
+/* Fixed width on images */
+img {
+  width: 400px;
+}
+
+/* Cap content width so long lines stay readable */
+main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Ensure form stays usable on narrow screens */
+form {
+  min-width: 280px;
+}
+
+/*
+   Relative Units (em, rem, %, vh, vw)
+*/
+
+/* rem - relative to root font size */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* em - relative to parent font size */
+h3 {
+  font-size: 1.25em;
+  padding-left: 0.5em;
+}
+
+/* % - relative to parent width */
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* vh / vw - relative to viewport */
+img {
+  max-width: 80vw; /* cap image width at 80% of viewport width */
+  max-height: 50vh; /* cap image height at 50% of viewport height */
+}
+
+/*
+   CSS Variable with fallback
+*/
+
+/* Use --primary-color, fall back to black if the variable isn't defined */
+legend {
+  color: var(--primary-color, black);
+  font-weight: bold;
+}
+
+/*
+   Colors (color-mix)
+*/
+
+/* Blend red and blue 50/50 in sRGB to get a muted purple background */
+ol {
+  background-color: color-mix(in srgb, red 50%, blue);
+  color: white;
+  padding: 12px 32px;
+}
+
+/*
+   Colors (wide-gamut color())
+*/
+
+/* Wide-gamut display-p3 with sRGB fallback for unsupported browsers */
+summary {
+  color: rgb(255, 80, 0); /* sRGB fallback */
+  color: color(display-p3 1 0.3 0); /* vivid wide-gamut orange on supporting displays */
+}
+/*
+   Colors (hsl / hsla)
+*/
+
+/* Solid color using hsl() */
+button {
+  background-color: hsl(140, 60%, 40%); /* fresh green */
+  color: hsl(0, 0%, 100%);
+  border: none;
+  padding: 8px 16px;
+}
+
+/* Semi-transparent color using hsla() */
+fieldset {
+  border-color: hsla(220, 80%, 50%, 0.5); /* translucent blue border */
 }
