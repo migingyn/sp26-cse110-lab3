@@ -29,20 +29,18 @@ details {
 }
 
 /*
-   Colors (hex)
+   Colors (hsl / hsla)
 */
 
-/* 6-digit hex */
-footer {
-  color: #3a86ff; /* bright accent blue for footer text */
+/* Solid color using hsl() */
+button {
+  background-color: hsl(140, 60%, 40%); /* fresh green */
+  color: hsl(0, 0%, 100%);
+  border: none;
+  padding: 8px 16px;
 }
 
-/* 3-digit shorthand hex */
-hr {
-  border-color: #f33; /* shorthand for #ff3333 */
-}
-
-/* 8-digit hex with alpha */
+/* Semi-transparent color using hsla() */
 fieldset {
-  background-color: #3a86ff33; /* 20% opaque accent blue */
+  border-color: hsla(220, 80%, 50%, 0.5); /* translucent blue border */
 }
