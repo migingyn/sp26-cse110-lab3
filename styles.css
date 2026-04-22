@@ -179,3 +179,26 @@ button {
 fieldset {
   border-color: hsla(220, 80%, 50%, 0.5); /* translucent blue border */
 }
+
+/*
+   Border (style, color, width, border-radius)
+*/
+
+/* Longhand border properties */
+blockquote,
+nav {
+  border-style: dashed;
+  border-color: teal;
+  border-width: 3px;
+}
+
+/* Rounded corners via border-radius */
+img {
+  border: 2px solid #333; /* shorthand combining width, style, color */
+  border-radius: 12px;
+}
+
+/* 50% radius for a circular element */
+button {
+  border-radius: 50%;
+}
