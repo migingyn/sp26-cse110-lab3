@@ -9,3 +9,21 @@ body {
   margin: 20px;
   color: #222; /* near-black for softer contrast than pure #000 */
 }
+
+/* ==========================================================================
+   Colors (rgb / rgba)
+   ========================================================================== */
+
+/* Solid color using rgb() */
+header {
+  background-color: rgb(30, 60, 120); /* deep navy blue header */
+  color: rgb(255, 255, 255);
+  padding: 12px;
+}
+
+/* Semi-transparent color using rgba() */
+details {
+  background-color: rgba(255, 200, 0, 0.4); /* translucent amber so page bg shows through */
+  padding: 8px;
+  border-radius: 4px;
+}
