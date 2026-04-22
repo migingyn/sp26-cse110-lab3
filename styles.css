@@ -31,7 +31,7 @@ h1, h2, h3 {
 
 /* Solid color using rgb() */
 header {
-  background-color: rgb(30, 60, 120); /* deep navy blue header */
+  background-color: rgb(158, 32, 184); /* deep navy blue header */
   color: rgb(255, 255, 255);
   padding: 12px;
 }
