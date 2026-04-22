@@ -450,3 +450,19 @@ div.overview {
 #form input[type="text"] {
   background-color: white;
 }
+
+/*
+   :has() relational pseudo-class
+*/
+
+/* Style any <section> that contains an <img> with a subtle accent border */
+section:has(img) {
+  border-left: 4px solid var(--primary-color, #3a86ff);
+  padding-left: 12px;
+}
+
+/* Highlight labels whose checkbox is currently checked */
+label:has(input:checked) {
+  font-weight: bold;
+  color: var(--primary-color, #3a86ff);
+}
