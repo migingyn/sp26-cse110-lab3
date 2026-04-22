@@ -27,3 +27,27 @@ details {
   padding: 8px;
   border-radius: 4px;
 }
+
+/*
+   Absolute Units (px, pt, cm, mm)
+*/
+
+/* px for border thickness */
+hr {
+  border-top: 2px solid #ccc;
+}
+
+/* pt for typography (common in print styles) */
+footer {
+  font-size: 10pt;
+}
+
+/* cm for a fixed physical size */
+summary {
+  padding: 0.5cm;
+}
+
+/* mm for fine-grained absolute spacing */
+legend {
+  margin-bottom: 3mm;
+}
