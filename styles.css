@@ -431,3 +431,22 @@ h3 + ul {
 h2 ~ p {
   color: #444;
 }
+
+/*
+   Selector List & Combined Selectors
+*/
+
+/* Selector list - apply the same rule to multiple element types */
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 0.02em;
+}
+
+/* Combined (chained) selector - <div> that also has the .overview class */
+div.overview {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+/* Combined with ID + attribute - the form section's text inputs */
+#form input[type="text"] {
+  background-color: white;
+}
