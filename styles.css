@@ -3,6 +3,10 @@
    Global defaults applied to the whole document.
 */
 
+:root {
+  --primary-color: #3a86ff; /* main accent color used across the page */
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5; /* improves readability for long paragraphs */
@@ -26,6 +30,16 @@ details {
   background-color: rgba(255, 200, 0, 0.4); /* translucent amber so page bg shows through */
   padding: 8px;
   border-radius: 4px;
+}
+
+/*
+   CSS Variable with fallback
+*/
+
+/* Use --primary-color, fall back to black if the variable isn't defined */
+legend {
+  color: var(--primary-color, black);
+  font-weight: bold;
 }
 
 /*
