@@ -341,6 +341,42 @@ nav {
 }
 
 /*
+   Selectors (universal, element, class, ID, attribute)
+*/
+
+/* Universal - reset box-sizing on every element */
+* {
+  box-sizing: border-box;
+}
+
+/* Element / type - target all <blockquote> elements */
+blockquote {
+  font-style: italic;
+}
+
+/* Class - highlight the overview block */
+.overview {
+  background-color: #eef6ff;
+  padding: 12px;
+  border-left: 4px solid var(--primary-color, #3a86ff);
+}
+
+/* ID - style the form section specifically */
+#form {
+  background-color: #fafafa;
+}
+
+/* Attribute - style every text input and links pointing to in-page anchors */
+input[type="text"] {
+  border: 1px solid #999;
+  padding: 4px 6px;
+}
+
+a[href^="#"] {
+  font-weight: bold;
+}
+
+/*
    Pseudo-classes (:hover, :active)
 */
 
