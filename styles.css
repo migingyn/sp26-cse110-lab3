@@ -171,8 +171,7 @@ ol {
 
 /* Wide-gamut display-p3 with sRGB fallback for unsupported browsers */
 summary {
-  color: rgb(255, 80, 0); /* sRGB fallback */
-  color: color(display-p3 1 0.3 0); /* vivid wide-gamut orange on supporting displays */
+  color: rgb(255, 80, 0); /* vivid orange - sRGB for universal support */
 }
 /*
    Colors (hsl / hsla)
@@ -471,28 +470,29 @@ label:has(input:checked) {
    Native CSS Nesting (&)
 */
 
-/* Parent form rule with nested child selectors (2+ levels deep) */
+/* Parent form rule */
 form {
   color: #333;
+}
 
-  /* level 1 - labels inside the form */
-  & label {
-    font-size: 0.95rem;
+/* level 1 - labels inside the form */
+form label {
+  font-size: 0.95rem;
+}
 
-    /* level 2 - inputs inside those labels */
-    & input {
-      margin-left: 6px;
-    }
-  }
+/* level 2 - inputs inside those labels */
+form label input {
+  margin-left: 6px;
+}
 
-  /* level 1 - fieldset inside the form, with nested legend */
-  & fieldset {
-    margin-bottom: 12px;
+/* level 1 - fieldset inside the form */
+form fieldset {
+  margin-bottom: 12px;
+}
 
-    & legend {
-      font-size: 1.1rem;
-    }
-  }
+/* level 2 - legend inside the fieldset */
+form fieldset legend {
+  font-size: 1.1rem;
 }
 
 /*
