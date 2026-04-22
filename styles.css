@@ -27,3 +27,14 @@ details {
   padding: 8px;
   border-radius: 4px;
 }
+
+/*
+   Colors (color-mix)
+*/
+
+/* Blend red and blue 50/50 in sRGB to get a muted purple background */
+ol {
+  background-color: color-mix(in srgb, red 50%, blue);
+  color: white;
+  padding: 12px 32px;
+}
