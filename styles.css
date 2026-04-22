@@ -287,3 +287,17 @@ nav a {
 span {
   display: inline;
 }
+
+/*
+   Flexbox Layout
+*/
+
+/* Turn nav into a flex row with spaced-out, vertically centered links */
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
