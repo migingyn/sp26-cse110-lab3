@@ -10,9 +10,9 @@ body {
   color: #222; /* near-black for softer contrast than pure #000 */
 }
 
-/* ==========================================================================
+/*
    Colors (rgb / rgba)
-   ========================================================================== */
+*/
 
 /* Solid color using rgb() */
 header {
@@ -37,4 +37,30 @@ ol {
   background-color: color-mix(in srgb, red 50%, blue);
   color: white;
   padding: 12px 32px;
+}
+
+/*
+   Colors (wide-gamut color())
+*/
+
+/* Wide-gamut display-p3 with sRGB fallback for unsupported browsers */
+summary {
+  color: rgb(255, 80, 0); /* sRGB fallback */
+  color: color(display-p3 1 0.3 0); /* vivid wide-gamut orange on supporting displays */
+}
+/*
+   Colors (hsl / hsla)
+*/
+
+/* Solid color using hsl() */
+button {
+  background-color: hsl(140, 60%, 40%); /* fresh green */
+  color: hsl(0, 0%, 100%);
+  border: none;
+  padding: 8px 16px;
+}
+
+/* Semi-transparent color using hsla() */
+fieldset {
+  border-color: hsla(220, 80%, 50%, 0.5); /* translucent blue border */
 }
