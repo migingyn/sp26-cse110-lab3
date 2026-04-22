@@ -10,9 +10,9 @@ body {
   color: #222; /* near-black for softer contrast than pure #000 */
 }
 
-/* ==========================================================================
+/*
    Colors (rgb / rgba)
-   ========================================================================== */
+*/
 
 /* Solid color using rgb() */
 header {
@@ -26,4 +26,28 @@ details {
   background-color: rgba(255, 200, 0, 0.4); /* translucent amber so page bg shows through */
   padding: 8px;
   border-radius: 4px;
+}
+
+/*
+   Margin (longhand, shorthand, auto)
+*/
+
+/* Longhand - each side set individually */
+section {
+  margin-top: 16px;
+  margin-right: 8px;
+  margin-bottom: 16px;
+  margin-left: 8px;
+}
+
+/* Shorthand - top/right/bottom/left in one line */
+h2 {
+  margin: 24px 0 12px 0;
+}
+
+/* auto - horizontally centers a block element with a fixed width */
+img {
+  display: block;
+  width: 400px;
+  margin: 0 auto;
 }
