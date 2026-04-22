@@ -466,3 +466,31 @@ label:has(input:checked) {
   font-weight: bold;
   color: var(--primary-color, #3a86ff);
 }
+
+/*
+   Native CSS Nesting (&)
+*/
+
+/* Parent form rule with nested child selectors (2+ levels deep) */
+form {
+  color: #333;
+
+  /* level 1 - labels inside the form */
+  & label {
+    font-size: 0.95rem;
+
+    /* level 2 - inputs inside those labels */
+    & input {
+      margin-left: 6px;
+    }
+  }
+
+  /* level 1 - fieldset inside the form, with nested legend */
+  & fieldset {
+    margin-bottom: 12px;
+
+    & legend {
+      font-size: 1.1rem;
+    }
+  }
+}
