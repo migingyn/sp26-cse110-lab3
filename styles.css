@@ -33,6 +33,30 @@ details {
 }
 
 /*
+   Margin (longhand, shorthand, auto)
+*/
+
+/* Longhand - each side set individually */
+section {
+  margin-top: 16px;
+  margin-right: 8px;
+  margin-bottom: 16px;
+  margin-left: 8px;
+}
+
+/* Shorthand - top/right/bottom/left in one line */
+h2 {
+  margin: 24px 0 12px 0;
+}
+
+/* auto - horizontally centers a block element with a fixed width */
+img {
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+}
+
+/*
    Absolute Units (px, pt, cm, mm)
 */
 
