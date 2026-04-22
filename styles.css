@@ -202,3 +202,20 @@ img {
 button {
   border-radius: 50%;
 }
+
+/*
+   Padding (longhand, shorthand)
+*/
+
+/* Longhand - each side set individually */
+nav {
+  padding-top: 8px;
+  padding-right: 16px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+}
+
+/* Shorthand - vertical | horizontal */
+form {
+  padding: 12px 20px;
+}
