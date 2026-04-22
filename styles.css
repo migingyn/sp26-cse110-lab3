@@ -29,6 +29,15 @@ details {
 }
 
 /*
+   Colors (wide-gamut color())
+*/
+
+/* Wide-gamut display-p3 with sRGB fallback for unsupported browsers */
+summary {
+  color: rgb(255, 80, 0); /* sRGB fallback */
+  color: color(display-p3 1 0.3 0); /* vivid wide-gamut orange on supporting displays */
+}
+/*
    Colors (hsl / hsla)
 */
 
