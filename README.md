@@ -1,4 +1,4 @@
 # Lab 2 - Starter
 
 ## Mikey's User Page
-[View my site](https://migingyn.github.io/Lab2_Starter/)
+[View my site](https://migingyn.github.io/sp26-cse110-lab3/)
