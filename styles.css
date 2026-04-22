@@ -10,9 +10,9 @@ body {
   color: #222; /* near-black for softer contrast than pure #000 */
 }
 
-/* ==========================================================================
+/*
    Colors (rgb / rgba)
-   ========================================================================== */
+*/
 
 /* Solid color using rgb() */
 header {
@@ -26,4 +26,23 @@ details {
   background-color: rgba(255, 200, 0, 0.4); /* translucent amber so page bg shows through */
   padding: 8px;
   border-radius: 4px;
+}
+
+/*
+   Colors (hex)
+*/
+
+/* 6-digit hex */
+footer {
+  color: #3a86ff; /* bright accent blue for footer text */
+}
+
+/* 3-digit shorthand hex */
+hr {
+  border-color: #f33; /* shorthand for #ff3333 */
+}
+
+/* 8-digit hex with alpha */
+fieldset {
+  background-color: #3a86ff33; /* 20% opaque accent blue */
 }
