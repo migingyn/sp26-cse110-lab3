@@ -33,6 +33,31 @@ details {
 }
 
 /*
+   Dimensions (height, width, max-width, min-width)
+*/
+
+/* Fixed header height */
+header {
+  height: 120px;
+}
+
+/* Fixed width on images */
+img {
+  width: 400px;
+}
+
+/* Cap content width so long lines stay readable */
+main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Ensure form stays usable on narrow screens */
+form {
+  min-width: 280px;
+}
+
+/*
    Relative Units (em, rem, %, vh, vw)
 */
 
